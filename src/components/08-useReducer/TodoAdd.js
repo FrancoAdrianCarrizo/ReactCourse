@@ -10,7 +10,6 @@ export const TodoAdd = ({handleAddTodo}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-
         if(description.trim().length <= 1){
             return ;
         }
@@ -19,7 +18,6 @@ export const TodoAdd = ({handleAddTodo}) => {
             desc: description,
             done: false
         }
-
         handleAddTodo(newTodo);
         reset();
     }
